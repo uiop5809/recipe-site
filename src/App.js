@@ -1,5 +1,6 @@
 import "./App.css";
 import Header from "./components/Header";
+import Footer from './components/Footer';
 import AppStateProvider from "./providers/AppStateProviders";
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
     <AppStateProvider>
       <div className="App">
         <Header />
+			  <Footer />
       </div>
     </AppStateProvider>
   );
