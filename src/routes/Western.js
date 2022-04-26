@@ -1,17 +1,14 @@
 import Recipe from '../components/Recipe';
 import useRecipe from '../hooks/useRecipes';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
 
 export default function Western() {
 	const recipes = useRecipe();
 
 	return (
 		<div>
-			<Header />
 			<div>
 				{recipes
-					.filter((recipe) => recipe.id.clice(0, 1) === 'we')
+					.filter((recipe) => recipe.id.slice(0, 2) === 'we')
 					.map((recipe) => (
 						<Recipe
 							key={recipe.id}
@@ -24,7 +21,6 @@ export default function Western() {
 						/>
 					))}
 			</div>
-			<Footer />
 		</div>
 	);
 }

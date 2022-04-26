@@ -6,6 +6,8 @@ import Chinese from './routes/Chinese';
 import Japanese from './routes/Japanese';
 import Western from './routes/Western';
 import Home from './routes/Home';
+import Header from './components/Header';
+import Footer from './components/Footer';
 import NavLinks from './components/NavLinks';
 
 function App() {
@@ -13,6 +15,7 @@ function App() {
 		// 가장 상위 컴포넌트에 프로바이더하여 전역 상태 관리
 		<BrowserRouter>
 			<AppStateProvider>
+				<Header />
 				<NavLinks />
 				<Routes>
 					<Route path="/" element={<Home />} />
@@ -21,6 +24,7 @@ function App() {
 					<Route path="/japanese" element={<Japanese />} />
 					<Route path="/western" element={<Western />} />
 				</Routes>
+				<Footer />
 			</AppStateProvider>
 		</BrowserRouter>
 	);

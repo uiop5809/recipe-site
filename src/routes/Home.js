@@ -1,14 +1,11 @@
 import Recipe from '../components/Recipe';
 import useRecipe from '../hooks/useRecipes';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
 
 export default function Home() {
 	const recipes = useRecipe();
 
 	return (
 		<div>
-			<Header />
 			<div>
 				{recipes.map((recipe) => (
 					<Recipe
@@ -22,7 +19,6 @@ export default function Home() {
 					/>
 				))}
 			</div>
-			<Footer />
 		</div>
 	);
 }
