@@ -1,11 +1,13 @@
 import Recipe from '../components/Recipe';
 import useRecipe from '../hooks/useRecipes';
+import Search from '../components/Category';
 
 export default function Chinese() {
 	const recipes = useRecipe();
 
 	return (
 		<div>
+			<Search />
 			<div>
 				{recipes
 					.filter((recipe) => recipe.id.slice(0, 2) === 'ch')
