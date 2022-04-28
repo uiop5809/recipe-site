@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Container from "./styled-component/Container";
 
 const Foot = styled.footer`
   background: #2c2a29;
@@ -7,10 +8,6 @@ const Foot = styled.footer`
     color: #fff;
     margin: 10px 0;
   }
-`;
-const Container = styled.div`
-  width: 70%;
-  margin: 0 auto;
 `;
 
 export default function Footer() {
