@@ -1,14 +1,13 @@
 import Recipe from '../components/Recipe';
 import useRecipe from '../hooks/useRecipes';
-import { useParams } from 'react-router-dom';
-import Search from '../components/Category';
+import Category from '../components/Category';
 
 export default function Korean() {
 	const recipes = useRecipe();
 
 	return (
 		<div>
-			<Search />
+			<Category />
 			<div>
 				{recipes
 					.filter((recipe) => recipe.id.slice(0, 2) === 'kr')

@@ -1,13 +1,13 @@
 import Recipe from '../components/Recipe';
 import useRecipe from '../hooks/useRecipes';
-import Search from '../components/Category';
+import Category from '../components/Category';
 
 export default function Home() {
 	const recipes = useRecipe();
 
 	return (
 		<div>
-			<Search />
+			<Category />
 			<div>
 				{recipes.map((recipe) => (
 					<Recipe
