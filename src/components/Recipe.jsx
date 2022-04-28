@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { MdOutlineTimer } from "react-icons/md";
 import Container from "./styled-component/Container";
+import StyledButton from "./styled-component/StyledButton";
 
 const Desc = styled.div`
   margin: 35px auto;
@@ -55,8 +56,13 @@ export default function Recipe({
             {totalTime}분
           </h4>
           <p className="desc">{desc}</p>
+          <StyledButton onClick={click}> 요리 시작하기 </StyledButton>
         </div>
       </Desc>
     </Container>
   );
+
+  function click() {
+    console.log("hello");
+  }
 }
