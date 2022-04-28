@@ -10,6 +10,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import { createGlobalStyle } from "styled-components";
 import { Reset } from "styled-reset";
+import Detail from "./routes/Detail";
 
 const GlobalStyle = createGlobalStyle`
 body {
@@ -31,6 +32,7 @@ function App() {
           <Route path="/chinese" element={<Chinese />} />
           <Route path="/japanese" element={<Japanese />} />
           <Route path="/western" element={<Western />} />
+          <Route path="/:id" element={<Detail />} />
         </Routes>
         <Footer />
       </AppStateProvider>
