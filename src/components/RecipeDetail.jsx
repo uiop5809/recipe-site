@@ -6,8 +6,9 @@ import { RiArrowGoBackFill } from 'react-icons/ri';
 import { MdOutlineTimer } from 'react-icons/md';
 
 const Details = styled.div`
-	margin: 35px auto;
-	height: 691px;
+	box-sizing: border-box;
+	padding: 10vh 0px;
+	height: 75vh;
 	display: flex;
 	img {
 		width: 300px;
@@ -27,9 +28,9 @@ const Details = styled.div`
 			margin: 10px 0;
 		}
 		ol {
-			height: 500px;
+			height: 40vh;
 			display: flex;
-			max-height: 500px;
+			max-height: 40vh;
 			flex-basis: max-content;
 			flex-direction: column;
 			flex-wrap: wrap;
@@ -42,8 +43,8 @@ const Details = styled.div`
 			}
 		}
 		.goBack {
-			width: 30px;
-			height: 30px;
+			width: 3vh;
+			height: 3vh;
 		}
 	}
 `;
