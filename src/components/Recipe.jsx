@@ -1,8 +1,8 @@
 import styled from "styled-components";
 import { MdOutlineTimer } from "react-icons/md";
+import Container from "./styled-component/Container";
 
-const Container = styled.div`
-  width: 70%;
+const Desc = styled.div`
   margin: 35px auto;
   height: 280px;
   display: flex;
@@ -45,16 +45,18 @@ export default function Recipe({
 }) {
   return (
     <Container>
-      <img src={coverImg} alt={title} />
-      <div className="description">
-        <h2 className="title">{title}</h2>
-        <h4 className="subtitle">{subtitle}</h4>
-        <h4 className="totalTime">
-          <MdOutlineTimer />
-          {totalTime}분
-        </h4>
-        <p className="desc">{desc}</p>
-      </div>
+      <Desc>
+        <img src={coverImg} alt={title} />
+        <div className="description">
+          <h2 className="title">{title}</h2>
+          <h4 className="subtitle">{subtitle}</h4>
+          <h4 className="totalTime">
+            <MdOutlineTimer />
+            {totalTime}분
+          </h4>
+          <p className="desc">{desc}</p>
+        </div>
+      </Desc>
     </Container>
   );
 }
