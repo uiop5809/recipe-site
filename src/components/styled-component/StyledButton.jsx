@@ -8,8 +8,8 @@ const StyledButton = styled.button`
 	margin: 0 auto;
 	padding: 6px 11px;
 	font-size: 15px;
-
-	:hover {
+	cursor: pointer;
+	&:hover {
 		background: #632626;
 	}
 	transition: 0.3s;

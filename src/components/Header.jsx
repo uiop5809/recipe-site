@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import NavLinks from './NavLinks';
 import Container from './styled-component/Container';
 
 const Head = styled.header`
