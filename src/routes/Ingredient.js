@@ -1,8 +1,8 @@
 import { useParams } from "react-router-dom";
-import RecipeDetail from "./../components/RecipeDetail";
-import useRecipes from "./../hooks/useRecipes";
+import IngredientDetail from "../components/IngredientDetail";
+import useRecipes from "../hooks/useRecipes";
 
-export default function Detail() {
+export default function Ingredient() {
   const { id } = useParams();
   const recipes = useRecipes();
 
@@ -11,7 +11,7 @@ export default function Detail() {
       {recipes
         .filter((recipe) => recipe.id === { id }.id)
         .map((recipe) => (
-          <RecipeDetail
+          <IngredientDetail
             key={recipe.id}
             id={recipe.id}
             title={recipe.title}

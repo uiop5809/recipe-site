@@ -1,7 +1,7 @@
 import Container from "./styled-component/Container";
 import styled from "styled-components";
 import StyledButton from "./styled-component/StyledButton";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { RiArrowGoBackFill } from "react-icons/ri";
 import { MdOutlineTimer } from "react-icons/md";
 
@@ -49,14 +49,13 @@ const Details = styled.div`
   }
 `;
 
-export default function RecipeDetail({
+export default function IngredientDetail({
   id,
   title,
   subtitle,
   coverImg,
   totalTime,
   ingredients,
-  step,
 }) {
   const navigate = useNavigate();
   return (
@@ -84,6 +83,9 @@ export default function RecipeDetail({
             }}
           >
             <RiArrowGoBackFill className="goBack" />
+          </StyledButton>
+          <StyledButton>
+            <Link to={`/step/${id}`}>요리 step 시작</Link>
           </StyledButton>
         </div>
       </Details>

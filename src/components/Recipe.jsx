@@ -60,7 +60,7 @@ export default function Recipe({
           </h4>
           <p className="desc">{desc}</p>
           <StyledButton>
-            <Link to={`/${id}`}>요리 시작하기 </Link>
+            <Link to={`/ingredient/${id}`}>요리 시작하기 </Link>
           </StyledButton>
         </div>
       </Desc>
