@@ -39,7 +39,7 @@ const Details = styled.div`
 				margin: 5px 10px;
 				height: 16px;
 				padding: 10px;
-				background: #e3b7a0;
+				background-color: #e3b7a0;
 				border-radius: 10px;
 				cursor: pointer;
 				label {
@@ -68,7 +68,7 @@ const Details = styled.div`
 					text-align: center;
 					vertical-align: middle;
 					cursor: pointer;
-					background: #fff;
+					background-color: #fff;
 					border: 1px solid #cacece;
 					border-radius: 3px;
 					box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05),
@@ -140,9 +140,9 @@ export default function IngredientDetail({
 					>
 						<RiArrowGoBackFill className="goBack" />
 					</StyledButton>
-					<StyledButton className="startCooking">
-						<Link to={`/step/${id}`}>요리 시작하기</Link>
-					</StyledButton>
+					<Link to={`/step/${id}`}>
+						<StyledButton className="startCooking">요리 시작하기</StyledButton>
+					</Link>
 				</div>
 			</Details>
 		</Container>

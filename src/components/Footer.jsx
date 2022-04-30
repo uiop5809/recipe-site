@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import Container from './styled-component/Container';
 
 const Foot = styled.footer`
-	background: #2c2a29;
+	background-color: #2c2a29;
 	box-sizing: border-box;
 	padding: 1.8vh 0;
 	height: 10vh;
