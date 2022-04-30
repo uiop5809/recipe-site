@@ -12,6 +12,8 @@ import { createGlobalStyle } from "styled-components";
 import { Reset } from "styled-reset";
 import Ingredient from "./routes/Ingredient.js";
 import Step from "./routes/Step.js";
+import Search from "./routes/Search.js";
+import SearchBarDetail from "./components/SearchBarDetail";
 
 const GlobalStyle = createGlobalStyle`
 body {
@@ -35,6 +37,8 @@ function App() {
           <Route path="/western" element={<Western />} />
           <Route path="/ingredient/:id" element={<Ingredient />} />
           <Route path="/step/:id" element={<Step />} />
+          <Route path="/search" element={<Search />} />
+          <Route path="/search/:id" element={<SearchBarDetail />} />
         </Routes>
         <Footer />
       </AppStateProvider>
