@@ -11,7 +11,7 @@ export default function Step() {
       {recipes
         .filter((recipe) => recipe.id === { id }.id)
         .map((recipe) => (
-          <StepDetail key={recipe.id} step={recipe.step} />
+          <StepDetail key={recipe.id} steps={recipe.steps} />
         ))}
     </div>
   );

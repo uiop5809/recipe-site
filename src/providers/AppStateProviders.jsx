@@ -30,7 +30,7 @@ const AppStateProvider = ({ children }) => {
         "황설탕 3큰술(36g)",
         "후춧가루 약간",
       ],
-      step: [
+      steps: [
         {
           content:
             "당근 고구마, 감자는 큼직하게 잘라주고, 양파는 4등 분 한 후에 3등분 하세요.",
@@ -89,7 +89,7 @@ const AppStateProvider = ({ children }) => {
         "버섯(생략 가능)",
         "감자(생략 가능)",
       ],
-      step: [
+      steps: [
         {
           content: "재료를 준비합니다.",
           time: 60,
@@ -143,7 +143,7 @@ const AppStateProvider = ({ children }) => {
         "식용유 3스푼",
         "김치국물 3스푼",
       ],
-      step: [
+      steps: [
         {
           content:
             "김치 국그릇 가득 담은 걸 냄비에 옮겨주세요. 혹시 신김치가 없으신 분들은 김치 위에 식초를 한스푼 뿌려 10분 정도 놓아주세요",
@@ -202,7 +202,7 @@ const AppStateProvider = ({ children }) => {
         "설탕 22ml",
         "물 150ml",
       ],
-      step: [
+      steps: [
         {
           content:
             "돈가스를 기름에 굽거나 튀겨주세요. 돈가스는 튀기는 것이 바삭하니 더 맛있는 것 같아요.(취향껏 요리해주세요)",
@@ -260,7 +260,7 @@ const AppStateProvider = ({ children }) => {
         "쯔유",
         "냉수",
       ],
-      step: [
+      steps: [
         {
           content: "쯔유와 냉수를 2:3의 비율로 섞어 잠시 냉동실에 넣어둔다.",
           time: 60,
@@ -319,7 +319,7 @@ const AppStateProvider = ({ children }) => {
         "마요네즈",
         "가쓰오부시가루",
       ],
-      step: [
+      steps: [
         {
           content:
             "양배추는 가늘게 채썰어주세요. 칼질을 잘 못하는 분들은 감자필러로 긁어도 좋아요. 양배추샐러드도 이렇게 만들면 식감이 좋아서 평소보다 많이 먹게 되더라고요. 돈가스집에서 주는 양배추샐러드 느낌으로~",
