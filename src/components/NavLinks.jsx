@@ -9,7 +9,7 @@ const List = styled.div`
 			box-sizing: border-box;
 			position: relative;
 			&:hover {
-				background: #9d5353;
+				background-color: #9d5353;
 			}
 			width: 20%;
 			height: 70px;

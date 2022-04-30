@@ -3,7 +3,7 @@ import NavLinks from './NavLinks';
 import Container from './styled-component/Container';
 
 const HSearch = styled.div`
-	background: #fae3d9;
+	background-color: #fae3d9;
 	text-align: center;
 	h1 {
 		font-size: 50px;

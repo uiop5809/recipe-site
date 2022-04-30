@@ -17,6 +17,7 @@ const Details = styled.div`
 		border-radius: 100px;
 	}
 	div {
+		width: 100%;
 		.title {
 			font-size: 24px;
 			font-weight: 800;
@@ -35,12 +36,15 @@ const Details = styled.div`
 			flex-direction: column;
 			flex-wrap: wrap;
 			li {
-				margin: 0px 5px 10px 0px;
+				margin: 5px 10px;
 				height: 16px;
 				padding: 10px;
-				background: #e3b7a0;
+				background-color: #e3b7a0;
 				border-radius: 10px;
 				cursor: pointer;
+				label {
+					cursor: pointer;
+				}
 				input[type='checkbox'] {
 					display: none;
 				}
@@ -53,8 +57,8 @@ const Details = styled.div`
 					-ms-user-select: none;
 					user-select: none;
 				}
-				input[type='checkbox'] + label:active:before,
-				input[type='checkbox'] + label:before {
+				input[type='checkbox'] + span:active:before,
+				input[type='checkbox'] + span:before {
 					content: ' ';
 					display: inline-block;
 					width: 18px;
@@ -63,13 +67,14 @@ const Details = styled.div`
 					margin: -2px 8px 0 0;
 					text-align: center;
 					vertical-align: middle;
-					background: #fff;
+					cursor: pointer;
+					background-color: #fff;
 					border: 1px solid #cacece;
 					border-radius: 3px;
 					box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05),
 						inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
 				}
-				input[type='checkbox']:checked + label:before {
+				input[type='checkbox']:checked + span:before {
 					content: '✔';
 					color: #314ca2;
 					text-shadow: 1px 1px white;
@@ -83,6 +88,12 @@ const Details = styled.div`
 		.goBack {
 			width: 3vh;
 			height: 3vh;
+		}
+		.startCooking {
+			font-size: 1.7vh;
+			width: 10vw;
+			height: 5vh;
+			float: right;
 		}
 	}
 `;
@@ -109,15 +120,17 @@ export default function IngredientDetail({
 					</div>
 					<ul>
 						{ingredients.map((ingredient) => (
-							<li>
-								<input
-									type="checkbox"
-									id={ingredient}
-									name="ingred"
-									key={ingredient}
-								/>
-								<label htmlFor={ingredient}> {ingredient}</label>
-							</li>
+							<label>
+								<li>
+									<input
+										type="checkbox"
+										id={ingredient}
+										name="ingred"
+										key={ingredient}
+									/>
+									<span>{ingredient}</span>
+								</li>
+							</label>
 						))}
 					</ul>
 					<StyledButton
@@ -127,9 +140,9 @@ export default function IngredientDetail({
 					>
 						<RiArrowGoBackFill className="goBack" />
 					</StyledButton>
-					<StyledButton>
-						<Link to={`/step/${id}`}>요리 step 시작</Link>
-					</StyledButton>
+					<Link to={`/step/${id}`}>
+						<StyledButton className="startCooking">요리 시작하기</StyledButton>
+					</Link>
 				</div>
 			</Details>
 		</Container>
