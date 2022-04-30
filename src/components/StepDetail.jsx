@@ -12,7 +12,8 @@ SwiperCore.use([Navigation, Pagination, Autoplay]);
 
 const StyledSwiper = styled(Swiper)`
   width: 1300px;
-  height: 450px;
+  height: 70vh;
+  box-sizing: border-box;
   position: relative;
   padding: 20px 0;
 
