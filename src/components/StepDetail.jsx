@@ -19,19 +19,19 @@ const StyledSwiper = styled(Swiper)`
 	height: 75vh;
 	box-sizing: border-box;
 	position: relative;
-	padding: 15vh 0;
+	padding: 10vh 0;
 
 	.swiper-slide {
-		height: 400px;
+		height: 50vh;
 		.box {
 			display: flex;
 			flex-wrap: wrap;
-			height: 400px;
+			height: 50vh;
 			padding: 0 20px;
 
 			.content {
 				margin: auto;
-				height: 200px;
+				height: 20vh;
 				width: 300px;
 				line-height: 1.4em;
 				font-size: 18px;
@@ -43,7 +43,7 @@ const StyledSwiper = styled(Swiper)`
 				border-radius: 10px;
 				color: white;
 				width: 220px;
-				height: 75px;
+				height: 7.5vh;
 				margin: auto;
 				box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
 				text-align: center;
@@ -59,14 +59,14 @@ const StyledSwiper = styled(Swiper)`
 		border: 5px solid #fff5ee;
 	}
 	.goBackButton {
-		margin: 5vh 0 0 2vw;
+		margin: 1vh 0 0 2vw;
 		.goBack {
 			width: 3vh;
 			height: 3vh;
 		}
 	}
 	.goHomeButton {
-		margin: 5vh 2vw 0 0;
+		margin: 1vh 2vw 0 0;
 		float: right;
 		.goHome {
 			width: 3vh;
