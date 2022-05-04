@@ -8,7 +8,7 @@ import { MdOutlineTimer } from 'react-icons/md';
 const Details = styled.div`
 	box-sizing: border-box;
 	padding: 10vh 0px;
-	height: 75vh;
+	height: 73.5vh;
 	display: flex;
 	img {
 		width: 300px;
@@ -116,18 +116,13 @@ export default function IngredientDetail({
 					<div className="subtitle">{subtitle}</div>
 					<div className="totalTime">
 						<MdOutlineTimer />
-						{totalTime}
+						{totalTime}분
 					</div>
 					<ul>
 						{ingredients.map((ingredient) => (
-							<label>
+							<label key={ingredient}>
 								<li>
-									<input
-										type="checkbox"
-										id={ingredient}
-										name="ingred"
-										key={ingredient}
-									/>
+									<input type="checkbox" id={ingredient} name="ingred" />
 									<span>{ingredient}</span>
 								</li>
 							</label>
