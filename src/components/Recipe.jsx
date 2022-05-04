@@ -6,21 +6,23 @@ import { Link } from 'react-router-dom';
 
 const Desc = styled.div`
 	margin: 35px auto;
-	height: 280px;
+	padding: 10px;
 	display: flex;
 	border-radius: 20px;
 	background: #fff5ee;
+	align-items: center;
 
 	img {
-		width: 250px;
-		height: 250px;
-		margin: auto 20px;
+		width: 22.3vh;
+		height: 22.3vh;
+		margin: 10px 20px;
 		border-radius: 100px;
 	}
 
 	.description {
 		padding: 20px 20px 20px 0;
 		margin-bottom: 20px;
+		position: relative;
 		.title {
 			font-size: 24px;
 			font-weight: 800;
@@ -32,9 +34,12 @@ const Desc = styled.div`
 			margin: 10px 0;
 		}
 		.desc {
-			margin: 10px 0;
+			margin: 10px 0 30px 0;
 			line-height: 1.25em;
-			height: 100px;
+		}
+		button {
+			position: absolute;
+			bottom: 10px;
 		}
 	}
 `;
