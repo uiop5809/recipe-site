@@ -34,7 +34,7 @@ netlify를 활용한 배포 링크: https://ssi-recipe.netlify.app/
 
 - Git
 
-## 이슈 및 협업 일정 관리
+## 협업 일정 관리
 
 - GitHub
 - Zoom
