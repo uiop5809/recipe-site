@@ -1,6 +1,6 @@
 # Recipe Toy Project
 
-netlify를 활용한 배포 링크: https://ssi-recipe.netlify.app/
+netlify를 활용한 배포 링크: https://ssi-recipe.netlify.app/  
 🔥개발 일지 https://uiop5809.github.io/recipe/recipe/
 
 ## 소개글
